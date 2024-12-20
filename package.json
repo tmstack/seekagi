@@ -10,7 +10,7 @@
   "lint": "next lint",
   "db:push": "dotenv -e .env.direct -- prisma db push"
   "postinstall": "prisma generate"
-  }
+  },
   "dependencies": {
     "@dnd-kit/core": "^6.1.0",
     "@dnd-kit/modifiers": "^7.0.0",
