@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  scripts": {
+  "scripts": {
   "dev": "next dev",
   "build": "prisma generate && DIRECT_DATABASE_URL=$DIRECT_DATABASE_URL prisma db push && next build",
   "start": "next start",
