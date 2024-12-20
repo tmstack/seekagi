@@ -5,12 +5,12 @@
   "type": "module",
   "scripts": {
   "dev": "next dev",
-  "build": "prisma generate && DIRECT_DATABASE_URL=$DIRECT_DATABASE_URL prisma db push && next build",
+  "build": "prisma generate && prisma db push && next build",
   "start": "next start",
   "lint": "next lint",
-  "db:push": "dotenv -e .env.local -- DIRECT_DATABASE_URL=$DIRECT_DATABASE_URL prisma db push",
+  "db:push": "dotenv -e .env.direct -- prisma db push"
   "postinstall": "prisma generate"
-  },
+  }
   "dependencies": {
     "@dnd-kit/core": "^6.1.0",
     "@dnd-kit/modifiers": "^7.0.0",
